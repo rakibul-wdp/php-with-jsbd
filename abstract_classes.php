@@ -61,16 +61,18 @@ abstract class ParentClass {
   abstract protected function prefixName($name);
 }
 
+// in ths example the abstract method has an argument, and the child class has two optional arguments that are not defined in the parent's abstract method:
+
 class ChildClass extends ParentClass {
-  public function prefixName($name) {
+  public function prefixName($name, $separator = ".", $greet = "Dear") {
     if ($name == "John Doe") {
-      $prefix = "Mr.";
+      $prefix = "Mr";
     } elseif ($name == "Jane Doe") {
-      $prefix = "Mrs.";
+      $prefix = "Mrs";
     } else {
       $prefix = "";
     }
-    return "{$prefix} {$name}";
+    return "{$greet} {$prefix}{$separator} {$name}";
   }
 }
 
