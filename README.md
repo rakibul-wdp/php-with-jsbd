@@ -39,3 +39,14 @@
 ### Final Thought
 
 - A good programmer is someone who always looks both ways before crossing a one-way street.
+
+### PHP Opportunities
+
+- A wise man will make more opportunities than he finds.
+- Websites and Web Application
+- Command Line Scripting
+- Desktop (GUI) Application
+- E-Commerce Solutions
+- CMS Development
+- Frameworks, CMS
+- If Opportunity doesn't Knock, Build a Door.
