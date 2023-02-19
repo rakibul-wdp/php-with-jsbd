@@ -50,3 +50,11 @@
 - CMS Development
 - Frameworks, CMS
 - If Opportunity doesn't Knock, Build a Door.
+
+### PHP Drawbacks
+
+- A disadvantage is often a seed of an advantage
+- Security: Since it is open sourced, all people can see source code
+- Large Application: difficult to use it for programming huge applications.
+- Error Handling: PHP has a poor quality of handling errors.
+- Weak Type: lead to unexpected bugs.
