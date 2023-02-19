@@ -27,3 +27,15 @@
 - July 14, 2004 PHP 5, Powered by Zend Engine ||
 - Dec 3, 2015 PHP 7.0
 - Nov 26, 2020 PHP 8
+
+### PHP Present and Future
+
+- I have seen the future and it is very much like the present, only longer. - Kehlog Albran
+
+- 8 out of every 10 websites that you visit on the Internet are using PHP is some way.
+
+### Before final thought
+
+### Final Thought
+
+- A good programmer is someone who always looks both ways before crossing a one-way street.
