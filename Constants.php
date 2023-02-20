@@ -21,3 +21,19 @@ $number = 70;
 
 // const -> global
 // variable -> global, local, static
+
+// echo strlen("Omok");
+// echo strrev("Hello");
+
+$x = 5985;
+// echo var_dump(is_numeric($x));
+
+// cast float to int
+$x = 23892.783;
+$int_cast = (int)$x;
+// echo $int_cast;
+
+// echo (abs(-8.2));
+
+define("CONSTANT", "hello world");
+echo CONSTANT;
