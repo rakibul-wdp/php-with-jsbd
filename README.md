@@ -90,3 +90,22 @@
 - Array, Object, Callable, and Iterable
 - Two Special Type
 - Resource and Object
+
+#### What is Operator?
+
+- An operator in a programming language is a symbol that tell the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result.
+- +, -, \*, /, %, >, <, ==, &&, ||
+- Operator and Operands
+- x + y = z
+- here + and = is Operators
+- x, y is Operands
+- z is Result
+- Programming Operators
+- Arithmetic operator
+- Assignment operators
+- Comparison operators
+- Increment/Decrement operators
+- Logical operators
+- String operators
+- Array operators
+- Conditional assignment operators
