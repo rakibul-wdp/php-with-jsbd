@@ -61,4 +61,9 @@ myTest();
 myTest();
 myTest();
 
+$name = "Omok Tomok"; // String
+$num = 13; // Number
+$bool = true; // Boolean
+$fruits = ["apple", "banana", "mango"]; // Array
+
 ?>

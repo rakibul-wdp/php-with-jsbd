@@ -58,3 +58,20 @@
 - Large Application: difficult to use it for programming huge applications.
 - Error Handling: PHP has a poor quality of handling errors.
 - Weak Type: lead to unexpected bugs.
+
+#### Variable
+
+- Variables are simply used to store data. Variable values can be changed over the course of script.
+
+##### Rules for PHP Variable
+
+- Start with a dollar ($) sign
+- Supports alpha-numeric character and underscore (A-z, 0-9, \_)
+- Variable name must start with letter or underscore
+- Can't contain space
+- Can't start with number or symbol
+- Variables are CASE-SENSITIVE
+
+#### PHP is Loosely Typed Language
+
+- It automatically makes the conversions to its correct data type
