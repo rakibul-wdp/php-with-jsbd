@@ -75,3 +75,18 @@
 #### PHP is Loosely Typed Language
 
 - It automatically makes the conversions to its correct data type
+
+#### Understanding Data Types
+
+- A data type is a type of data
+
+#### Data Types in PHP
+
+- The values assigned to a PHP variable may be of different data types.
+- PHP Supports Ten Primitive Data Types.
+- Four Scalar Type
+- Boolean, Integer, Float, and String
+- Four Compound Type
+- Array, Object, Callable, and Iterable
+- Two Special Type
+- Resource and Object
