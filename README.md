@@ -120,3 +120,12 @@
 - String Operators
 - Array Operators
 - Conditional Assignment Operators
+
+#### Control Structures in PHP
+
+- Control Structures allow a script to react differently depending on what has already occurred, or based on user input, and allow the graceful handling of repetitive tasks.
+
+#### PHP has TWO primary types of Control Structures
+
+- Conditional Statements
+- Control Loops

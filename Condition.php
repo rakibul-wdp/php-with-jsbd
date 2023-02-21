@@ -17,18 +17,19 @@
 //   echo "Have a good night";
 // }
 
-$fav_color = "green";
+// $fav_color = "green";
 
-switch ($fav_color) {
-  case "red":
-    echo "your fav color is red";
-    break;
-  case "blue":
-    echo "your fav color is blue";
-    break;
-  case "green":
-    echo "your fav color is green";
-    break;
-  default:
-    echo "your don't have fav color";
-}
+// switch ($fav_color) {
+//   case "red":
+//     echo "your fav color is red";
+//     break;
+//   case "blue":
+//     echo "your fav color is blue";
+//     break;
+//   case "green":
+//     echo "your fav color is green";
+//     break;
+//   default:
+//     echo "your don't have fav color";
+// }
+
