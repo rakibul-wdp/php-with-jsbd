@@ -109,3 +109,14 @@
 - String operators
 - Array operators
 - Conditional assignment operators
+
+#### Operators in PHP
+
+- An operator in a programming language is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result.
+- Arithmetic Operator
+- Comparison Operators
+- Increment / Decrement Operators
+- Logical Operators
+- String Operators
+- Array Operators
+- Conditional Assignment Operators
