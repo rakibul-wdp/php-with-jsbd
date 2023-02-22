@@ -41,7 +41,7 @@
 //   echo "the number is: $x";
 // }
 
-$x = 0;
+// $x = 0;
 
 // while($x < 10) {
 //   if ($x == 4) {
@@ -51,11 +51,21 @@ $x = 0;
 //   $x++;
 // }
 
-while ($x < 10) {
-  if ($x == 4) {
-    $x++;
-    continue;
-  }
-  echo "the number is: $x";
-  $x++;
+// while ($x < 10) {
+//   if ($x == 4) {
+//     $x++;
+//     continue;
+//   }
+//   echo "the number is: $x";
+//   $x++;
+// }
+
+// for, while, do while, foreach
+
+$num = 0;
+
+while ($num <= 100) {
+  echo $num;
+  echo PHP_EOL;
+  $num++;
 }
