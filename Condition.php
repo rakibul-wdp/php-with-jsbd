@@ -34,9 +34,9 @@
 // }
 
 
-$a = 20;
-$b = 100;
-$c = 20;
+// $a = 20;
+// $b = 100;
+// $c = 20;
 
 // if ($a == $b) {
 //   echo "A si equal to B";
@@ -46,8 +46,27 @@ $c = 20;
 //   echo "A is less than B";
 // }
 
-if ($a == $c && $a > $b) {
-  echo "hello world";
-} else {
-  echo "Jani na";
+// if ($a == $c && $a > $b) {
+//   echo "hello world";
+// } else {
+//   echo "Jani na";
+// }
+
+$num1 = 26;
+$num2 = 10;
+
+if ($num1 > $num2) {
+  if ($num1 > 50) {
+    echo "yes, true";
+  } elseif ($num1 < 30) {
+    if ($num1 == 25) {
+      echo "it's 25";
+    } else {
+      echo "no, it's not";
+    }
+  } elseif ($num1 < 45) {
+    echo "Yes, less than 45";
+  }else {
+    echo "No, false";
+  }
 }
