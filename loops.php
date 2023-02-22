@@ -98,7 +98,25 @@
 //   $num++;
 // }
 
-for ($num = 10; $num >= 1; $num--) {
-  echo $num;
-  echo "\n";
-}
+// for ($num = 10; $num >= 1; $num--) {
+//   echo $num;
+//   echo "\n";
+// }
+
+// $names = ["Abul", "Babul", "Cabul", "Dabul", "Ebul"];
+
+// foreach ($names as $name) {
+//   echo $name;
+//   echo "\n";
+// }
+
+// $names = [
+//   "name" => "Omok",
+//   "age" => 22,
+//   "hairColor" => "black",
+// ];
+
+// foreach ($names as $key => $value) {
+//   echo $key, $value;
+//   echo PHP_EOL;
+// }
