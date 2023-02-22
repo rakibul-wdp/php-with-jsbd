@@ -62,12 +62,26 @@
 
 // for, while, do while, foreach
 
-$num = 1;
+// $num = 1;
 
-while ($num <= 20) {
-  if ($num % 2 == 0 && $num % 5 == 0) {
-    echo $num;
-    echo PHP_EOL;
-  }
+// while ($num <= 20) {
+//   if ($num % 2 == 0 && $num % 5 == 0) {
+//     echo $num;
+//     echo PHP_EOL;
+//   }
+//   $num++;
+// }
+
+$num = 100;
+
+// while($num < 10) {
+//   echo $num;
+//   echo PHP_EOL;
+//   $num++;
+// }
+
+do {
+  echo $num;
+  echo PHP_EOL;
   $num++;
-}
+} while ($num < 10);
