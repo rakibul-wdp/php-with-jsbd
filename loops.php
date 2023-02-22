@@ -72,7 +72,7 @@
 //   $num++;
 // }
 
-$num = 100;
+// $num = 100;
 
 // while($num < 10) {
 //   echo $num;
@@ -80,8 +80,25 @@ $num = 100;
 //   $num++;
 // }
 
-do {
+// do {
+//   echo $num;
+//   echo PHP_EOL;
+//   $num++;
+// } while ($num < 10);
+
+// Init counter
+// Test counter
+// Increment counter
+
+// $num = 1; // Init counter
+
+// while ($num < 10) {
+//   echo $num;
+//   echo PHP_EOL;
+//   $num++;
+// }
+
+for ($num = 10; $num >= 1; $num--) {
   echo $num;
-  echo PHP_EOL;
-  $num++;
-} while ($num < 10);
+  echo "\n";
+}
