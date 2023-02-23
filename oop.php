@@ -28,8 +28,25 @@ $apple->set_name("Apple");
 $apple->set_color("Red");
 // $banana->set_name("Banana");
 
-echo "Name: " . $apple->get_name();
-echo PHP_EOL;
+// echo "Name: " . $apple->get_name();
+// echo PHP_EOL;
 // echo $banana->get_name();
-echo "Color: " . $apple->get_color();
-echo PHP_EOL;
+// echo "Color: " . $apple->get_color();
+// echo PHP_EOL;
+
+// php - the $this keyword
+// 1. inside the class (by adding a set_name() method and use $this):
+
+class Fruits {
+  public $name;
+  function set_name($name) {
+    $this->name = $name;
+  }
+}
+
+$apple = new Fruits();
+$apple->set_name("Apple");
+
+echo $apple->name;
+$apple = new Fruit();
+var_dump($apple instanceof Fruit);
