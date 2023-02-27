@@ -42,10 +42,10 @@ class Fruit {
 class Strawberry extends Fruit {
   public function message() {
     echo "am i a fruit or a berry";
+    // call protected method from within derived call - OK
+    $this -> intro();
   }
 }
 
-// Try to call all three methods from outside class
 $strawberry = new Strawberry("Strawberry", "red"); // OK. __construct() is public
-$strawberry->message(); // OK. is public
-// $strawberry->intro(); // ERROR. intro() is protedted
+// $strawberry->messge(); // OK. message() is public and it calls intro() (which is protected) from within the derived class.
