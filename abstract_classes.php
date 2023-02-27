@@ -15,42 +15,66 @@ An abstract class or method is defined with the abstract keyword:
 // }
 
 // Parent class
-abstract class Car {
-  public $name;
-  public function __construct($name)
-  {
-    $this->name = $name;
-  }
-  abstract public function intro() : string;
-}
+// abstract class Car {
+//   public $name;
+//   public function __construct($name)
+//   {
+//     $this->name = $name;
+//   }
+//   abstract public function intro() : string;
+// }
 
 // child classes
-class Audi extends Car {
-  public function intro() : string {
-    return "Choose German Quality ? I'm an $this->name";
+// class Audi extends Car {
+//   public function intro() : string {
+//     return "Choose German Quality ? I'm an $this->name";
+//   }
+// }
+
+// class Volvo extends Car {
+//   public function intro() : string {
+//     return "proud to be swedish I'm a $this->name";
+//   }
+// }
+
+// class Citroen extends Car {
+//   public function intro() : string {
+//     return "french extravagance I'm a $this->name";
+//   }
+// }
+
+// // create objects form the child classes
+// $audi = new audi("Audi");
+// echo $audi->intro();
+// echo PHP_EOL;
+
+// $volvo = new volvo("Volvo");
+// echo $volvo->intro();
+// echo PHP_EOL;
+
+// $citroen = new citroen("citroen");
+// echo $citroen->intro();
+
+// PHP - More Abstract Class Examples
+abstract class ParentClass {
+  // Abstract method with an argument
+  abstract protected function prefixName($name);
+}
+
+class ChildClass extends ParentClass {
+  public function prefixName($name) {
+    if ($name == "John Doe") {
+      $prefix = "Mr.";
+    } elseif ($name == "Jane Doe") {
+      $prefix = "Mrs.";
+    } else {
+      $prefix = "";
+    }
+    return "{$prefix} {$name}";
   }
 }
 
-class Volvo extends Car {
-  public function intro() : string {
-    return "proud to be swedish I'm a $this->name";
-  }
-}
-
-class Citroen extends Car {
-  public function intro() : string {
-    return "french extravagance I'm a $this->name";
-  }
-}
-
-// create objects form the child classes
-$audi = new audi("Audi");
-echo $audi->intro();
+$class = new ChildClass;
+echo $class-> prefixName("John Doe");
 echo PHP_EOL;
-
-$volvo = new volvo("Volvo");
-echo $volvo->intro();
-echo PHP_EOL;
-
-$citroen = new citroen("citroen");
-echo $citroen->intro();
+echo $class->prefixName("Jane Doe");
