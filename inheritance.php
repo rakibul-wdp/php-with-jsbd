@@ -39,13 +39,30 @@ class Fruit {
   }
 }
 
+// PHP - Overriding Inherited Methods
 class Strawberry extends Fruit {
-  public function message() {
-    echo "am i a fruit or a berry";
-    // call protected method from within derived call - OK
-    $this -> intro();
+  public $weight;
+  public function __construct($name, $color, $weight)
+  {
+    $this->name = $name;
+    $this->color = $color;
+    $this->weight = $weight;
+  }
+  public function intro() {
+    echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.";
   }
 }
 
-$strawberry = new Strawberry("Strawberry", "red"); // OK. __construct() is public
+$strawberry = new Strawberry("Strawberry", "red", 50);
+$strawberry -> intro();
+
+// class Strawberry extends Fruit {
+//   public function message() {
+//     echo "am i a fruit or a berry";
+//     // call protected method from within derived call - OK
+//     $this -> intro();
+//   }
+// }
+
+// $strawberry = new Strawberry("Strawberry", "red"); // OK. __construct() is public
 // $strawberry->messge(); // OK. message() is public and it calls intro() (which is protected) from within the derived class.
