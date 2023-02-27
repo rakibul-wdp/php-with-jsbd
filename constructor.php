@@ -72,4 +72,4 @@ class Fruit {
 $mango = new Fruit();
 $mango->set_name("Mango");
 $mango->set_color("Yellow");
-$mango->set_wight("300");
+// $mango->set_wight("300");
