@@ -26,35 +26,35 @@
 
 // PHP - Inheritance and the Protected Access Modifier
 
-class Fruit {
-  public $name;
-  public $color;
-  public function __construct($name, $color)
-  {
-    $this->name = $name;
-    $this->color = $color;
-  }
-  protected function intro() {
-    echo "The fruit is {$this->name} and the color is {$this->color}";
-  }
-}
+// class Fruit {
+//   public $name;
+//   public $color;
+//   public function __construct($name, $color)
+//   {
+//     $this->name = $name;
+//     $this->color = $color;
+//   }
+//   protected function intro() {
+//     echo "The fruit is {$this->name} and the color is {$this->color}";
+//   }
+// }
 
 // PHP - Overriding Inherited Methods
-class Strawberry extends Fruit {
-  public $weight;
-  public function __construct($name, $color, $weight)
-  {
-    $this->name = $name;
-    $this->color = $color;
-    $this->weight = $weight;
-  }
-  public function intro() {
-    echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.";
-  }
-}
+// class Strawberry extends Fruit {
+//   public $weight;
+//   public function __construct($name, $color, $weight)
+//   {
+//     $this->name = $name;
+//     $this->color = $color;
+//     $this->weight = $weight;
+//   }
+//   public function intro() {
+//     echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.";
+//   }
+// }
 
-$strawberry = new Strawberry("Strawberry", "red", 50);
-$strawberry -> intro();
+// $strawberry = new Strawberry("Strawberry", "red", 50);
+// $strawberry -> intro();
 
 // class Strawberry extends Fruit {
 //   public function message() {
@@ -66,3 +66,20 @@ $strawberry -> intro();
 
 // $strawberry = new Strawberry("Strawberry", "red"); // OK. __construct() is public
 // $strawberry->messge(); // OK. message() is public and it calls intro() (which is protected) from within the derived class.
+
+// PHP - The final keyword
+
+// the final keyword can be used to prevent class inheritance or to prevent method overriding.
+
+final class Fruit {
+  final public function intro() {
+    // some code
+  }
+}
+
+// will result in error
+class Strawberry extends Fruit {
+  public function intro() {
+    // some code
+  }
+}
