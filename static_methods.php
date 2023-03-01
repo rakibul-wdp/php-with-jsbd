@@ -14,6 +14,27 @@ class greeting {
   public static function welcome() {
     echo "hello world";
   }
+
+  public function __construct()
+  {
+    self::welcome();
+  }
 }
 
-greeting::welcome();
+new greeting();
+
+class domain {
+  protected static function getWebsiteName() {
+    return "example.com";
+  }
+}
+
+class domainExam extends domain {
+  public $websiteName;
+  public function __construct() {
+    $this->websiteName = parent::getWebsiteName();
+  }
+}
+
+$domainExam = new domainExam;
+echo $domainExam -> websiteName;
